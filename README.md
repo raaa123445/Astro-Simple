@@ -5,3 +5,4 @@
 ### npm create astro@latest
 ### cd eccentric-earth
 ### npm run dev
+#### http://localhost:4322
