@@ -1,0 +1,144 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font for a modern look */
+  background-color: #eaeaea; /* Light background for contrast */
+  color: #333; /* Dark text for readability */
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px; /* Increased padding for a more spacious layout */
+  background-color: #0056b3; /* Deep blue background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+/* Logo styles */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-img {
+  height: 40px; /* Consistent logo size */
+  margin-right: 15px; /* Increased margin for spacing */
+}
+
+.logo-name {
+  font-size: 28px; /* Slightly larger font size */
+  font-weight: bold;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin-bottom: 6px;
+  background-color: white; /* Changed to white for contrast */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Navigation links styles */
+.nav-links {
+  position: absolute;
+  width: 100%;
+  top: 60px; /* Adjusted for spacing below navbar */
+  left: 0;
+  background-color: #ff9776; /* Coral background for dropdown */
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 12px 20px; /* Added horizontal padding */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #ff7654; /* Darker coral on hover */
+  color: #fff;
+}
+
+.expanded {
+  display: flex; /* Display dropdown on expanded */
+}
+
+/* Responsive styles */
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger in larger screens */
+  }
+}
+
+/* Navbar links styles */
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+  font-size: 1.2rem; /* Consistent font size */
+}
+
+.navbar-link:hover {
+  color: #ffdd57; /* Highlight color on hover */
+}
+
+/* Contact info styles */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Increased gap for clarity */
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}

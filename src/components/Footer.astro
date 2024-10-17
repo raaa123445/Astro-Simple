@@ -1,0 +1,98 @@
+---
+import Social from './Social.astro';
+---
+
+<head>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/kTcNcJ4JbPjfRa1W/TH9NhjGklwdsZJYFIJrUsjtJLO2PRlqyTvp2mwJ8glXgYC2F7cm4BA2f4SA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+  }
+
+  .social-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  a:hover {
+    color: #007BFF;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .icon {
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .social-container, .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+<footer>
+  <div class="social-container">
+    <a href="https://twitter.com/astrodotbuild" target="_blank">
+      <i class="bi bi-twitter"></i> Twitter
+    </a>
+    <a href="https://github.com/raaa123445" target="_blank">
+      <i class="bi bi-github"></i> GitHub
+    </a>
+    <a href="https://youtube.com/@CHANDARA_63" target="_blank">
+      <i class="bi bi-youtube"></i> YouTube
+    </a>
+  </div>
+
+  <div class="footer-links">
+    <a href="/about">
+      <i class="fas fa-info-circle icon"></i> About Us
+    </a>
+    <a href="/privacy">
+      <i class="fas fa-user-secret icon"></i> Privacy Policy
+    </a>
+    <a href="/terms">
+      <i class="fas fa-file-contract icon"></i> Terms of Service
+    </a>
+    <a href="/contact">
+      <i class="fas fa-envelope icon"></i> Contact Us
+    </a>
+  </div>
+
+  <div class="footer-text">
+    © 2024 InternShip. All rights reserved.
+  </div>
+</footer>

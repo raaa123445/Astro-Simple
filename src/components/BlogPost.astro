@@ -1,0 +1,23 @@
+---
+const { url, title } = Astro.props;
+---
+<li>
+  <a href={url}>{title}</a>
+</li>
+
+<style>
+  li {
+    list-style: none;
+    margin: 1em 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #00539F;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
