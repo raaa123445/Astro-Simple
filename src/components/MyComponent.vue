@@ -1,6 +1,8 @@
 <!-- src/components/MyComponent.vue -->
 <template>
-    <div>Hello from MyComponent!</div>
+    <p> To establish a complete digital eco-platform
+
+POSCAR Digital is one of the leading company in smart system in education, accounting, attendance and other ERP solutions.</p>
   </template>
   
   <script>
