@@ -3,5 +3,5 @@ import vue from '@astrojs/vue';
 
 export default defineConfig({
   integrations: [vue()],
-  site: 'https://example.com',
+  site: 'https://Astro-Simple',
 });
