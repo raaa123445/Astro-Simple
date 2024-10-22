@@ -3,5 +3,6 @@ import vue from '@astrojs/vue';
 
 export default defineConfig({
   integrations: [vue()],
-  site: 'https://Astro-Simple',
+  site: 'https://simple.github.io',
+  base: 'my-repo',
 });
